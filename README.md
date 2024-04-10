@@ -28,14 +28,14 @@ This exporter is designed to be run by a LauchDaemon, i.e.
 ```
 
 The arguments allowed are port number (defaults to 9101),  
-then a list of sensor types you want from  
-* 	temperature    
-* 	voltage  
-* 	current   
-* 	power  
-* 	fans  
-they can all be singular or plural   
-you can also put 'all' for all of them.  
-the default with no sensors listed is 'temperature' only  
+then a list of sensor types you want from (they can all be singular or plural)  
+* 	`temperature(s)`    
+* 	`voltage(s)`  
+* 	`current(s)`   
+* 	`power(s)`  
+* 	`fan(s)`  
+ 
+you can also put `all` for all of them.  
+the default with no sensors listed is `temperature` only  
 
 Sensors and smc.swift adapted from https://github.com/exelban/stats
