@@ -1,5 +1,5 @@
 # smc_exporter
-Swift smc exporter for Prometheus
+### Swift smc exporter for Prometheus
 
 Usage:
 This exporter is designed to be run by a LauchDaemon, i.e.
@@ -39,3 +39,5 @@ you can also put `all` for all of them.
 the default with no sensors listed is `temperature` only  
 
 Sensors and smc.swift adapted from https://github.com/exelban/stats
+
+smc_exporter_installer.pkgproj is a [Packages](http://s.sudre.free.fr/Software/Packages/about.html) project file to install the binary into `/usr/loca/bin/smc_exporter` and the org.rskgroup.smc_exporter.plist LaunchDaemon into /Library/LaunchDaemons, with a postinstall to bootout an existing LaunchDaemon and bootstrap the new one.
