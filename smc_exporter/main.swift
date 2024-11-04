@@ -43,7 +43,7 @@ import NIOHTTP1
 let currentHost = Host.current().localizedName ?? ""
 let defaultPort = 9101
 let arguments = CommandLine.arguments
-let execName = URL(filePath: arguments.first!).lastPathComponent
+//let execName = URL(filePath: arguments.first!).lastPathComponent
 let arg1 = arguments.dropFirst().first
 if arg1 == "-h" || arg1 == "help" || arg1 == "--help" {
     print(

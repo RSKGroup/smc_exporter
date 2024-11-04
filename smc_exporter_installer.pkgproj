@@ -446,7 +446,7 @@
 												<key>GID</key>
 												<integer>0</integer>
 												<key>PATH</key>
-												<string>smc_exporter 2024-04-10 13-01-33/Products/usr/local/bin/smc_exporter</string>
+												<string>smc_exporter 2024-11-04 10-56-24/Products/usr/local/bin/smc_exporter</string>
 												<key>PATH_TYPE</key>
 												<integer>1</integer>
 												<key>PERMISSIONS</key>
@@ -567,7 +567,7 @@
 			<key>USE_HFS+_COMPRESSION</key>
 			<false/>
 			<key>VERSION</key>
-			<string>1.0</string>
+			<string>1.1</string>
 		</dict>
 		<key>PROJECT_COMMENTS</key>
 		<dict>

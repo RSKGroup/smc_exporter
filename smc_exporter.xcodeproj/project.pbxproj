@@ -11,8 +11,8 @@
 		0753A73C2BC449BB00777837 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 0753A73B2BC449BB00777837 /* NIO */; };
 		0753A73E2BC449BB00777837 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0753A73D2BC449BB00777837 /* NIOCore */; };
 		0753A7402BC449BB00777837 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = 0753A73F2BC449BB00777837 /* NIOHTTP1 */; };
+		077C282C2CD915A800460DD9 /* smc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C282B2CD915A800460DD9 /* smc.swift */; };
 		07DDB74C2BC5A73100F3D470 /* Sensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DDB7492BC5A73100F3D470 /* Sensors.swift */; };
-		07DDB74D2BC5A73100F3D470 /* smc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DDB74A2BC5A73100F3D470 /* smc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		0753A7302BC4498A00777837 /* smc_exporter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = smc_exporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		0753A7332BC4498A00777837 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		077C282B2CD915A800460DD9 /* smc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smc.swift; sourceTree = "<group>"; };
 		07DDB7492BC5A73100F3D470 /* Sensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensors.swift; sourceTree = "<group>"; };
-		07DDB74A2BC5A73100F3D470 /* smc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = smc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			children = (
 				0753A7332BC4498A00777837 /* main.swift */,
 				07DDB7492BC5A73100F3D470 /* Sensors.swift */,
-				07DDB74A2BC5A73100F3D470 /* smc.swift */,
+				077C282B2CD915A800460DD9 /* smc.swift */,
 			);
 			path = smc_exporter;
 			sourceTree = "<group>";
@@ -107,7 +107,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					0753A72F2BC4498A00777837 = {
 						CreatedOnToolsVersion = 15.3;
@@ -141,8 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0753A7342BC4498A00777837 /* main.swift in Sources */,
-				07DDB74D2BC5A73100F3D470 /* smc.swift in Sources */,
 				07DDB74C2BC5A73100F3D470 /* Sensors.swift in Sources */,
+				077C282C2CD915A800460DD9 /* smc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +183,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -246,6 +247,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -271,8 +273,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 98TLNPQ359;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.rskgoup.smc-exporter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -282,8 +287,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 98TLNPQ359;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.rskgoup.smc-exporter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
