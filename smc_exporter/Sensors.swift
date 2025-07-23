@@ -130,6 +130,38 @@ internal let SensorsList: [Sensor] = [
     Sensor(key: "Tf29", name: "GPU 7", type: .temperature),
     Sensor(key: "Tf2A", name: "GPU 8", type: .temperature),
     
+    // M4
+    Sensor(key: "Te05", name: "CPU efficiency core 1", type: .temperature),
+    Sensor(key: "Te0S", name: "CPU efficiency core 2", type: .temperature),
+    Sensor(key: "Te09", name: "CPU efficiency core 3", type: .temperature),
+    Sensor(key: "Te0H", name: "CPU efficiency core 4", type: .temperature),
+    
+    Sensor(key: "Tp01", name: "CPU performance core 1", type: .temperature),
+    Sensor(key: "Tp05", name: "CPU performance core 2", type: .temperature),
+    Sensor(key: "Tp09", name: "CPU performance core 3", type: .temperature),
+    Sensor(key: "Tp0D", name: "CPU performance core 4", type: .temperature),
+    Sensor(key: "Tp0V", name: "CPU performance core 5", type: .temperature),
+    Sensor(key: "Tp0Y", name: "CPU performance core 6", type: .temperature),
+    Sensor(key: "Tp0b", name: "CPU performance core 7", type: .temperature),
+    Sensor(key: "Tp0e", name: "CPU performance core 8", type: .temperature),
+    
+    Sensor(key: "Tg0G", name: "GPU 1", type: .temperature),
+    Sensor(key: "Tg0H", name: "GPU 2", type: .temperature),
+    Sensor(key: "Tg1U", name: "GPU 1", type: .temperature),
+    Sensor(key: "Tg1k", name: "GPU 2", type: .temperature),
+    
+    Sensor(key: "Tg0K", name: "GPU 3", type: .temperature),
+    Sensor(key: "Tg0L", name: "GPU 4", type: .temperature),
+    Sensor(key: "Tg0d", name: "GPU 5", type: .temperature),
+    Sensor(key: "Tg0e", name: "GPU 6", type: .temperature),
+    Sensor(key: "Tg0j", name: "GPU 7", type: .temperature),
+    Sensor(key: "Tg0k", name: "GPU 8", type: .temperature),
+    
+    Sensor(key: "Tm0p", name: "Memory Proximity 1", type: .temperature),
+    Sensor(key: "Tm1p", name: "Memory Proximity 2", type: .temperature),
+    Sensor(key: "Tm2p", name: "Memory Proximity 3", type: .temperature),
+    
+    // Apple Silicon
     Sensor(key: "TaLP", name: "Airflow left", type: .temperature),
     Sensor(key: "TaRF", name: "Airflow right", type: .temperature),
     
