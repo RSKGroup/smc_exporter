@@ -5,6 +5,8 @@
 //  Created by Eric Hemmeter on 4/9/24.
 //
 
+// Data from https://github.com/exelban/stats/blob/722f0fe190baf36983ff2cfb93ab6d333b62e44c/Modules/Sensors/values.swift
+
 import Foundation
 
 public enum SensorType: String, Codable {
@@ -62,6 +64,7 @@ internal let SensorsList: [Sensor] = [
     Sensor(key: "TN0D", name: "Northbridge diode", type: .temperature),
     Sensor(key: "TN0H", name: "Northbridge heatsink", type: .temperature),
     Sensor(key: "TN0P", name: "Northbridge proximity", type: .temperature),
+    
     // Apple Silicon
     Sensor(key: "Tp09", name: "CPU efficiency core 1", type: .temperature),
     Sensor(key: "Tp0T", name: "CPU efficiency core 2", type: .temperature),
@@ -161,6 +164,36 @@ internal let SensorsList: [Sensor] = [
     Sensor(key: "Tm1p", name: "Memory Proximity 2", type: .temperature),
     Sensor(key: "Tm2p", name: "Memory Proximity 3", type: .temperature),
     
+    // M5
+    Sensor(key: "Tp00", name: "CPU super core 1", type: .temperature),
+    Sensor(key: "Tp04", name: "CPU super core 2", type: .temperature),
+    Sensor(key: "Tp08", name: "CPU super core 3", type: .temperature),
+    Sensor(key: "Tp0C", name: "CPU super core 4", type: .temperature),
+    Sensor(key: "Tp0G", name: "CPU super core 5", type: .temperature),
+    Sensor(key: "Tp0K", name: "CPU super core 6", type: .temperature),
+    
+    Sensor(key: "Tp0O", name: "CPU performance core 1", type: .temperature),
+    Sensor(key: "Tp0R", name: "CPU performance core 2", type: .temperature),
+    Sensor(key: "Tp0U", name: "CPU performance core 3", type: .temperature),
+    Sensor(key: "Tp0X", name: "CPU performance core 4", type: .temperature),
+    Sensor(key: "Tp0a", name: "CPU performance core 5", type: .temperature),
+    Sensor(key: "Tp0d", name: "CPU performance core 6", type: .temperature),
+    Sensor(key: "Tp0g", name: "CPU performance core 7", type: .temperature),
+    Sensor(key: "Tp0j", name: "CPU performance core 8", type: .temperature),
+    Sensor(key: "Tp0m", name: "CPU performance core 9", type: .temperature),
+    Sensor(key: "Tp0p", name: "CPU performance core 10", type: .temperature),
+    Sensor(key: "Tp0u", name: "CPU performance core 11", type: .temperature),
+    Sensor(key: "Tp0y", name: "CPU performance core 12", type: .temperature),
+    
+    Sensor(key: "Tg0U", name: "GPU 1", type: .temperature),
+    Sensor(key: "Tg0X", name: "GPU 2", type: .temperature),
+    Sensor(key: "Tg0d", name: "GPU 3", type: .temperature),
+    Sensor(key: "Tg0g", name: "GPU 4", type: .temperature),
+    Sensor(key: "Tg0j", name: "GPU 5", type: .temperature),
+    Sensor(key: "Tg1Y", name: "GPU 6", type: .temperature),
+    Sensor(key: "Tg1c", name: "GPU 7", type: .temperature),
+    Sensor(key: "Tg1g", name: "GPU 8", type: .temperature),
+    
     // Apple Silicon
     Sensor(key: "TaLP", name: "Airflow left", type: .temperature),
     Sensor(key: "TaRF", name: "Airflow right", type: .temperature),
@@ -195,6 +228,8 @@ internal let SensorsList: [Sensor] = [
     Sensor(key: "IG0R", name: "GPU High side", type: .current),
     Sensor(key: "ID0R", name: "DC In", type: .current),
     Sensor(key: "IBAC", name: "Battery", type: .current),
+    Sensor(key: "IU1R", name: "Thunderbolt Left", type: .current),
+    Sensor(key: "IU2R", name: "Thunderbolt Right", type: .current),
     
     // Power
     Sensor(key: "PC0C", name: "CPU Core", type: .power),
@@ -209,13 +244,19 @@ internal let SensorsList: [Sensor] = [
     
     Sensor(key: "PCPG", name: "GPU Intel Graphics", type: .power),
     Sensor(key: "PG0R", name: "GPU", type: .power),
+    Sensor(key: "PG0R", name: "GPU 1", type: .power),
+    Sensor(key: "PG1R", name: "GPU 2", type: .power),
     Sensor(key: "PCGC", name: "Intel GPU", type: .power),
     Sensor(key: "PCGM", name: "Intel GPU (IMON)", type: .power),
     
     Sensor(key: "PC3C", name: "RAM", type: .power),
     Sensor(key: "PPBR", name: "Battery", type: .power),
     Sensor(key: "PDTR", name: "DC In", type: .power),
+    Sensor(key: "PMTR", name: "Memory Total", type: .power),
     Sensor(key: "PSTR", name: "System Total", type: .power),
+    
+    Sensor(key: "PU1R", name: "Thunderbolt Left", type: .power),
+    Sensor(key: "PU2R", name: "Thunderbolt Right", type: .power),
     
     Sensor(key: "PDBR", name: "Power Delivery Brightness", type: .power),
     
